@@ -1,0 +1,259 @@
+/* Apply a full page reset */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%; /* Ensure full height */
+    width: 100%; /* Ensure full width */
+    font-family: 'Montserrat', sans-serif; /* Apply elegant serif font */
+}
+
+/* General Styles */
+body {
+    font-family: 'Playfair Display', serif; /* Elegant serif font for body */
+    font-size: 16px;
+    background: #ffffff; /* White background */
+    color: #4a235a;
+    overflow-x: hidden; /* Disable horizontal scrolling */
+}
+
+/* Update header fonts to use Playfair Display */
+h1, h2, h3 {
+  font-family: 'Montserrat', sans-serif;
+    color: #3d1e56;
+}
+
+h4, h5 {
+    font-family: "Playfair Display", serif;
+}
+
+a {
+    padding: 30px;
+    font-family: 'Playfair Display', serif; /* Apply elegant serif font */
+    color: #3d1e56;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #a569bd;
+}
+
+/* Header */
+header {
+    background-color: #ffffff;
+    padding: 0; /* Remove padding to let the hero section take up the full height */
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center contents horizontally */
+    border-bottom: 1px solid #ddd;
+    position: relative;
+}
+
+/* Hero Section */
+#hero {
+    background-size: cover;
+    background-position: center;
+    height: 620px; /* Adjust height as needed */
+    width: 100%; /* Full viewport width */
+    text-align: center;
+    background-image: url(../images/rainy-night.jpg);
+    display: flex; /* Enable flexbox */
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Center items vertically */
+    align-items: center; /* Center items horizontally */
+    position: relative;
+    z-index: 0; /* Ensure text appears above the overlay */
+}
+
+/* Optional: Add an overlay effect for better text visibility */
+#hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); /* Dark overlay */
+    z-index: -1; /* Ensure it's behind the text */
+}
+
+/* Ensure text appears above the overlay */
+#hero h1, #hero p {
+    position: relative;
+    z-index: 1; /* Ensure text appears above the overlay */
+    color: #ffffff;
+}
+
+h1 {
+    font-weight: 600;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+p {
+    font-size: 1.2em;
+    margin: 0.5em 0 0;
+}
+
+/* Back Navigator */
+.back-navigator {
+    padding-top: 20px;
+    position: absolute;
+    top: 1em;
+    left: 1em;
+}
+
+.back-navigator a {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #ffffff;
+    transition: color 0.3s ease, transform 0.3s ease;
+    font-family: 'Montserrat', sans-serif;    
+}
+
+.back-navigator a:hover {
+    color: #a569bd;
+    transform: translateX(-5px);
+}
+
+/* Section Titles */
+h2 {
+    font-size: 2rem;
+    text-align: center;
+    color: #3d1e56;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+h2::after {
+    content: '';
+    width: 60px;
+    height: 4px;
+    background: linear-gradient(90deg, #e6b8ff, #d9a6f2);
+    display: block;
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+
+/* Gallery */
+#gallery {
+    padding: 60px 20px;
+}
+
+.gallery-grid {
+    padding: 40px;
+    display: flex;
+    flex-direction: column; /* Stack gallery items vertically */
+    column-gap: 2em; /* Add spacing between items */
+}
+
+.gallery-item {
+    display: flex; /* Flexbox for side-by-side layout */
+    align-items: center; 
+    column-gap: 2em; /* Spacing between image and text */
+    flex-wrap: wrap; /* Allow wrapping for responsiveness */
+}
+
+.gallery-item:nth-child(even) {
+    flex-direction: row-reverse; /* Alternate image and text positions */
+}
+
+.gallery-image {
+    flex: 1; /* Image takes up equal space */
+    max-width: 512px; 
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.gallery-image:hover {
+    transform: scale(1.15);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.gallery-text {
+    flex: 2; /* Text takes up more space */
+    text-align: left; /* Align text to the left */
+}
+
+.gallery-text h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    color: #3d1e56;
+    margin: 0;
+}
+
+.gallery-text p {
+    font-family: 'Playfair Display', serif;
+    font-size: 1rem;
+    color: #666;
+}
+
+/* About Section */
+#about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    text-align: center;
+}
+
+#about img {
+    width: 300px;
+    height: 300px;
+    border-radius: 10%;
+    object-fit: cover;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-out;
+}
+
+.about-text p {
+    font-family: 'Playfair Display', serif; /* Elegant serif font */
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 15px;
+    animation: slideUp 1s ease-out;
+}
+
+/* Footer */
+footer {
+    background: #3d1e56;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: #a569bd;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

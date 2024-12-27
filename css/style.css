@@ -1,0 +1,582 @@
+/* General Styles */
+body { 
+  font-family: "Noto Sans", sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  background: #ffffff; /* White background */
+  color: #4a235a;
+  overflow-x: hidden; /* Disable horizontal scrolling */
+}
+
+h1, h2, h3, .logo {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600px;
+  color: #3d1e56;
+}
+
+h4,h5 {
+  font-family: "Noto Sans", sans-serif;
+}
+
+a {
+  color: #3d1e56;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #a569bd;
+}
+
+/* Header Navigators */
+header {
+  background-color: #ffffff;
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+}
+
+.navbar-nav li a {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #3d1e56;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 10px;
+}
+
+.navbar-nav li a:hover{
+  background-color: #a569bd;
+  color: #ffffff;
+}
+
+.navbar{
+    background-color: white !important;
+}
+
+/*Left: Logo*/
+.navbar-brand{
+    margin-left: 5px;
+    margin-right: 30px;
+}
+
+.navbar-brand h1{
+5
+    font-size: 2rem;
+    font-weight: 6500;
+    color: #4a235a;   
+}
+
+/*Mobile-specific styles (max-width: 576px)*/
+@media (max-width:576px){
+    
+.custom-toggler{
+    border: 2px solid #3d1e56;
+    transition: background-color 0.5s ease;
+}
+    
+.custom-toggler:hover{
+    background-color: #3d1e56;
+}
+    
+.navbar-nav{
+    align-items: center;
+}
+    
+.navbar-nav li a{
+    margin: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}    
+    
+.navbar-brand{
+    margin-right: 80px;
+}
+    
+}
+
+/* Section Titles */
+h2 {
+  font-size: 2rem;
+  text-align: center;
+  color: #3d1e56;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+h2::after {
+  content: '';
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(90deg, #e6b8ff, #d9a6f2); /* Light purple gradient */
+  display: block;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+/* Sections */
+section {
+  padding: 60px 20px;
+}
+
+/* Gallery */
+#gallery {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+/* About Section */
+#about {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  column-gap: 30px;
+  padding: 40px;
+}
+
+#about h2, #story h3 {
+  text-align: center;
+  color: #3d1e56;
+  margin-bottom: 20px;
+}
+
+#about img {
+  width: 300px;
+  height: 300px;
+  border-radius: 10%;
+  object-fit: cover;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 1s ease-out;
+}
+
+#hero img {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 1s ease-out;
+}
+
+.hero-text{
+      animation: slideUp 1s ease-out;
+}
+
+.about-text p {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 15px;
+  animation: slideUp 1s ease-out;
+}
+
+.about-text a {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 15px;
+  animation: slideUp 1s ease-out;
+}
+
+/* Cards (Achievements & Work) */
+.card {
+  background: #ffffff;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Footer */
+footer {
+  background: #3d1e56;
+  color: #ffffff;
+  text-align: center;
+  padding-bottom: 30px;
+  padding-left: 65px;
+  padding-right: 65px;
+  font-size: 0.9rem;
+}
+
+footer a {
+  color: #a569bd;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.btn{
+    color: #ffffff;
+    background-color: #c292d6;
+    margin: 3px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Portfolio Section */
+#portfolio {
+  background-color: #ffffff; /* White background */
+  padding: 60px 0; /* Consistent vertical spacing */
+}
+
+#portfolio .container {
+  max-width: 1200px; /* Set a maximum width */
+  margin: 0 auto; /* Center the container */
+}
+
+#portfolio h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  color: #3d1e56;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 30px; /* Add space below the title */
+}
+
+.project {
+  border-radius: 8px; /* Keep the rounded corners */
+  transition: transform 0.3s ease-in-out;
+}
+
+.project:hover {
+  transform: scale(1.05);
+}
+
+.project img {
+  height: 280px;
+  width: 365px;
+  object-fit: cover;
+  border-radius: 25px;
+}
+
+.project h3 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  color: #555;
+  margin-top: 15px; /* Add space above the title */
+}
+
+.project p {
+  font-family: 'Open Sans', sans-serif;
+  color: #666;
+  font-size: 0.9rem;
+  margin-top: 10px;
+}
+
+.row.gy-4 {
+  column-gap: 1.5rem; /* Space between rows and columns */
+}
+
+.container {
+  max-width: 100%; /* Force full width */
+}
+
+.page{
+    font-size: 20px;
+}
+
+.artwork {
+  width: 290px; 
+  height: 410px;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.artwork2 {
+  width: 100%; 
+  height: 490px;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.artwork3 {
+  width: 100%; 
+  height: 570px;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.work {
+  width: 600px; 
+    height: 315px;;
+  border-radius: 15px;
+  object-fit: cover;
+}
+
+.UIdesign {
+  width: 100%; 
+    height: 400px;;
+  border-radius: 15px;
+  object-fit: cover;
+}
+
+.UIdesigns {
+  width: 100%; 
+    height: 100%;;
+  border-radius: 15px;
+  object-fit: cover;
+}
+
+.MelodyStars {
+  width: 100%; 
+    height: 100%;;
+  border-radius: 15px;
+  object-fit: cover;
+}
+
+.TTD{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+  object-fit: cover;
+}
+
+.HI{
+    width: 220px;
+    height: 220px;
+    border-radius: 15px;
+  object-fit: cover;
+}
+
+.HI3{
+    width: 250px;
+    height: 250px;
+    border-radius: 15px;
+  object-fit: cover;
+}
+
+.sunny{
+    width: 290px;
+    height: 350px;
+    border-radius: 15px;
+  object-fit: cover;
+}
+
+.logo{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+  object-fit: cover;
+}
+
+.icon{
+    width: 400px;
+    height: 400px;
+}
+
+#what-can-i-do {
+  background: #ffffff; /* Matches the site background */
+  padding:20px; /* Consistent spacing with other sections */
+}
+
+#what-can-i-do h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  color: #3d1e56;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#what-can-i-do h2::after {
+  content: '';
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, #e6b8ff, #d9a6f2);
+  display: block;
+  margin: 10px auto;
+  border-radius: 2px;
+}
+
+#work-experience h2{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  color: #3d1e56;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+#achievement h2{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  color: #3d1e56;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+#what-can-i-do p {
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 1.05rem;
+  color: #4a235a;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.icon-box {
+  background: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  height: 460px;
+}
+
+.icon-box img {
+  max-width: 80%;
+  height: 150px;
+  object-fit: cover;
+  margin-bottom: 15px;
+border-radius: 15px;
+}
+
+.icon-box h4 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #3d1e56;
+  margin-bottom: 10px;
+}
+
+.icon-box p {
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Style for Nav Tabs */
+.nav-tabs .nav-link {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  color: #3d1e56;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-tabs .nav-link:hover {
+  background-color: #a569bd;
+  color: #ffffff;
+}
+
+.nav-tabs .nav-link.active {
+  background-color: #3d1e56;
+  color: #ffffff;
+  border: none;
+}
+
+/* Contact Page Styles */
+.contact-title {
+  margin-top: 10px;
+  color: white ; /* Ensures "CONTACT" is white */
+ border-radius: none;
+}
+
+h6 {
+    font-family: 'Montserrat', sans-serif;
+  font-weight: 600px;
+  font-size: 2rem;
+  text-align: center;
+  color: white;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+h6::after {
+  content: '';
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(90deg, #e6b8ff, #d9a6f2); /* Light purple gradient */
+  display: block;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+.image-row {
+  margin: 50px 0;
+  background-color:rgba(0,0,0,0.3);
+  border-radius:10px;
+    padding: 60px;
+}
+
+.image-row img {
+  width: 80%; /* Adjusts image size to be slightly smaller */
+  max-width: 250px; /* Reduces the maximum width */
+  height: auto;
+  border-radius: 10px;
+}
+
+.image-row p {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600px;
+  font-size: 15px;
+  color: white; /* Change "PHONE" and "EMAIL" to white */
+  margin-top: 10px;
+  text-transform: uppercase;
+}
+
+/* Increase Icon Size */
+.image-row .bi {
+    font-size: 5rem; /* Adjust the size as needed */
+    color: white;  /* Optional: change the icon color */
+}
+
+.image-row p {
+    font-size: 1rem; /* Adjust the text size if needed */
+    margin-top: 10px;
+}
+
+/* Hoyolab */
+#Hoyolab{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-size: cover;
+    background-position: center;
+    height: 620px; /* Adjust height as needed */
+    width: 100%; /* Full viewport width */
+    text-align: start;
+    background-image: url(../images/bg-Hoyolab.jpg);
+    display: flex; /* Enable flexbox */
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Center items vertically */
+    align-items: center; /* Center items horizontally */
+    position: relative;
+    z-index: 0; /* Ensure text appears above the overlay */
+}
