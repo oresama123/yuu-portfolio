@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Gallery</title>
+  <!-- Latest compiled and minified CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lacquer&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Play:wght@400;700&family=Righteous&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Header Section -->
+  <header>
+    <!-- Header 1: Navbar -->
+    <nav class="navbar navbar-expand-sm bg-light navbar-light">
+    <div class="container-fluid">
+        
+    <!-- Left: Logo -->
+    <div class="col-sm-6 text start">
+        <div class="navbar-brand">
+        <h1>Yuu's Portfolio</h1> 
+        </div>
+    </div>
+
+    <!-- Center: Navbar Link (Collapsing for mobile) -->
+    <div class="collapse navbar-collapse col-sm-6" id="linkbar">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item"><a class="nav-link" href="Portfolio.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link disabled" href="Gallery.html">Gallery</a></li>
+        </ul>
+    </div>
+        
+    <!-- Mobile version toggler (will show on smaller screens) -->
+    <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#linkbar">
+        
+        <span class="navbar-toggler-icon"></span>   
+        
+    </button>
+        
+    </div>
+    </nav>
+  </header>
+
+  <!-- Gallery Section -->
+<section id="gallery" class="container py-5 p-4">
+    <h2>My Gallery</h2>
+  <!-- Nav Tabs -->
+  <ul class="nav nav-tabs mb-4 nav-justified" id="workTabs" role="tablist">
+    <li class="nav-item" role="presentation">
+      <button class="nav-link active" id="artwork-tab" data-bs-toggle="tab" data-bs-target="#artwork" type="button" role="tab" aria-controls="artwork" aria-selected="true">Illustration</button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="chibi-commission-tab" data-bs-toggle="tab" data-bs-target="#chibi-commission" type="button" role="tab" aria-controls="chibi-commission" aria-selected="true">Chibi Art</button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="ui-design-tab" data-bs-toggle="tab" data-bs-target="#ui-design" type="button" role="tab" aria-controls="ui-design" aria-selected="false">UI/UX Design</button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="other-design-tab" data-bs-toggle="tab" data-bs-target="#other-design" type="button" role="tab" aria-controls="other-design" aria-selected="false">Other Design</button>
+    </li>
+  </ul>
+
+  <!-- Tab Content -->
+  <div class="tab-content" id="workTabsContent">
+    <!-- My Artwork -->
+    <div class="tab-pane fade show active" id="artwork" role="tabpanel" aria-labelledby="artwork-tab">
+      <div class="row g-4">
+        <!-- Artwork Thumbnails (existing content from your gallery) -->
+        <!-- Add your artwork thumbnails here -->
+    <!-- Artwork 1 -->  
+    <div class="col-lg-3">
+      <div>
+        <img src="images/chigiri-china.jpg" class="artwork" 
+             data-bs-toggle="popover" data-bs-trigger="click"
+             title="Chigiri China (April 9, 2023)" 
+             data-bs-content="A work of the character called 'Chigiri Hyouma' from the anime 'Blue Lock'.">
+      </div> 
+    </div>
+      
+    <!-- Artwork 2 -->
+    <div class="col-lg-3">
+      <div>
+        <img src="images/yunjin.jpg" class="artwork" 
+             data-bs-toggle="popover" data-bs-trigger="click"
+             title="Yun Jin (December 2, 2021)" 
+             data-bs-content="A work of the character 'Yun Jin' from Genshin Impact. The work was in the theme of Chinese culture.">
+      </div>
+    </div>
+      
+    <!-- Artwork 3 -->
+    <div class="col-lg-3">
+      <div>
+        <img src="images/Klight.jpg" class="artwork" 
+             data-bs-toggle="popover" data-bs-trigger="click"
+             title="Light (October 25, 2022)" 
+             data-bs-content="A work of my original character - K (KouYuu). It was a practice piece for me to play with light color tones applying techniques.">
+      </div>
+    </div>
+      
+    <!-- Artwork 4 -->
+    <div class="col-lg-3">
+      <div>
+        <img src="images/power.jpg" class="artwork" 
+             data-bs-toggle="popover" data-bs-trigger="click"
+             title="Pa Pa Pa Power!! (December 7, 2021)" 
+             data-bs-content="A work of the character 'Power' from Chainsaw Man. In this piece, I played with different vibrant color tones and an interesting angle to enhance the impact of the scythe.">
+      </div>
+    </div>  
+      
+    <!-- Artwork 5 -->
+    <div class="col-lg-6">
+      <div>
+        <img src="images/k%20work.jpg" class="work" 
+             data-bs-toggle="popover" data-bs-trigger="click"
+             title="K - Home (December 16, 2021)" 
+             data-bs-content="A work of my original character - K (KouYuu). A piece that helped me improve my object drawing skills and character storytelling skills.">
+      </div>
+    </div>      
+      
+    <!-- Artwork 6 -->
+    <div class="col-lg-6">
+      <div>
+        <img src="images/FuhuaCNY2022.jpg" class="work" 
+             data-bs-toggle="popover" data-bs-trigger="click"
+             title="Happy Chinese New Year 2022!~ (January 23, 2022)" 
+             data-bs-content="A new year work of the character 'Fu Hua' from Honkai Impact 3rd. The work was featured in the Best Posts in HoYoLab.">
+      </div>
+    </div>
+      
+    <!-- Artwork 7 -->
+    <div class="col-lg-6">
+      <div>
+          <a href="Rainy-Night.html">
+        <img src="images/rainy-night.jpg" class="work" ></a>
+      </div>
+    </div>
+      
+    <!-- Artwork 8 -->
+    <div class="col-lg-6">
+      <div>
+        <img src="images/haidengjiekuaile.jpg" class="work" 
+             data-bs-toggle="popover" data-bs-trigger="click"
+             title="Happy Lantern Rite (February 11, 2022)" 
+             data-bs-content="The work for Genshin Impact Fan Art Contest 'Fleeting Colors in Flight'. The work tells about the characters greeting traveler(player) back for the Lantern Rite Festival. It's a festival there people release lanterns as a way to remind soldiers of way home, and to never lose sight of themselves.">
+      </div>
+    </div>
+      
+    <!-- Artwork 9 -->  
+    <div class="col-lg-4">
+      <div>
+        <img src="images/rita.jpg" class="artwork2" 
+             data-bs-toggle="popover" data-bs-trigger="click"
+             title="Rita (June 6, 2022)" 
+             data-bs-content="A work of the character called 'Rita' from Honkai Impact 3rd. It was for my personal training for character design concept art.">
+      </div> 
+    </div>
+      
+    <!-- Artwork 10 -->
+    <div class="col-lg-4">
+      <div>
+        <img src="images/kouyuu-maid.jpg" class="artwork2" 
+             data-bs-toggle="popover" data-bs-trigger="click"
+             title="Kouyuu (Maid.ver) (February 22, 2022)" 
+             data-bs-content="One of the character design concept art of my original character 'KouYuu'. It was for my personal training purpose.">
+      </div>
+    </div>
+      
+    <!-- Artwork 11 -->
+    <div class="col-lg-4">
+      <div>
+        <img src="images/wisteria.jpg" class="artwork2" 
+             data-bs-toggle="popover" data-bs-trigger="click"
+             title="Wisteria (November 19, 2021)" 
+             data-bs-content="Character design of my original character 'Wisteria'. I designed it with the theme 'Rose'.">
+      </div>
+    </div>
+          
+    <!-- Artwork 12 -->
+    <div class="col-lg-3">
+      <div>
+        <img src="images/ram.jpg" class="artwork" 
+             data-bs-toggle="popover" data-bs-trigger="click"
+             title="Halloween Ram (October 27, 2021)" 
+             data-bs-content="A Halloween themed work of the popular character 'Ram' from Re:Zero">
+      </div>
+    </div>  
+      
+    <!-- Artwork 13 -->
+    <div class="col-lg-3">
+      <div>
+        <img src="images/rem.jpg" class="artwork" 
+             data-bs-toggle="popover" data-bs-trigger="click"
+             title="Halloween Rem (October 27, 2021)" 
+             data-bs-content="A Halloween themed work of the popular character 'Rem' from Re:Zero">
+      </div>
+    </div>  
+      
+    <!-- Artwork 14 -->
+    <div class="col-lg-3">
+      <div>
+        <img src="images/commission-10.JPG" class="artwork" 
+             data-bs-toggle="popover" data-bs-trigger="click"
+             title="Commission (October 29, 2024)" 
+             data-bs-content="The second commissioned work from a client. It was highly praised by the client.">
+      </div>
+    </div>  
+      
+    <!-- Artwork 15 -->
+    <div class="col-lg-3">
+      <div>
+        <img src="images/commission%205.jpg" class="artwork" 
+             data-bs-toggle="popover" data-bs-trigger="click"
+             title="Commission (May 17, 2024)" 
+             data-bs-content="A commissioned work from a client. It was highly praised by the client.">
+      </div>
+    </div>
+          
+    <!-- Artwork 16 -->
+    <div class="col-lg-6">
+      <div>
+        <img src="images/xiao.jpg" class="work" 
+             data-bs-toggle="popover" data-bs-trigger="click"
+             title="Xiao (October 18, 2021)" 
+             data-bs-content="A work of the popular character 'Xiao' from Genshin Impact.">
+      </div>
+    </div>
+      
+    <!-- Artwork 17 -->
+    <div class="col-lg-6">
+      <div>
+        <img src="images/hutao.jpg" class="work" 
+             data-bs-toggle="popover" data-bs-trigger="click"
+             title="Hutao (November 18, 2021)" 
+             data-bs-content="A work of the popular character 'Hutao' from Genshin Impact.">
+      </div>
+    </div>
+          
+    <!-- Artwork 18 -->
+    <div class="col-lg-6">
+      <div>
+        <img src="images/ak-gladiia.jpg" class="work" 
+             data-bs-toggle="popover" data-bs-trigger="click"
+             title="Gladiia (May 12, 2021)" 
+             data-bs-content="A work of the character 'Gladiia' from Arknights.">
+      </div>
+    </div>
+      
+    <!-- Artwork 19 -->
+    <div class="col-lg-6">
+      <div>
+        <img src="images/20210623_ak_lappland.jpg" class="work" 
+             data-bs-toggle="popover" data-bs-trigger="click"
+             title="Ambience Synesthesia Lappland (June 23, 2021)" 
+             data-bs-content="A work of the popular character 'Lappland' from Arknights, featuring her Ambience Synesthesia new look.">
+      </div>
+    </div>
+      
+    <!-- Artwork 20 -->
+    <div class="col-lg-3">
+      <div>
+        <img src="images/20210330_ak_surtr.jpg" class="artwork" 
+             data-bs-toggle="popover" data-bs-trigger="click"
+             title="Surtr (March 30, 2021)" 
+             data-bs-content="A work of the game character 'Surtr' from Arknights. It is a work from one of my earliest pieces back in 2021. At that time, I was just a 15 years old kid who just got her very own Huion H610 drawing tablet.">
+      </div>
+    </div>  
+      
+    <!-- Artwork 21 -->
+    <div class="col-lg-3">
+      <div>
+        <img src="images/20210726_ak_thorns.jpg" class="artwork" 
+             data-bs-toggle="popover" data-bs-trigger="click"
+             title="Thorns (July 26, 2021)" 
+             data-bs-content="A work of the game character 'Thorns' from Arknights. I really am a big fan of the game Arknights. I've did a lots of fan arts of different Arknights character.">
+      </div>
+    </div>  
+      
+    <!-- Artwork 22 -->
+    <div class="col-lg-3">
+      <div>
+        <img src="images/20210812_ak_summer.jpg" class="artwork" 
+             data-bs-toggle="popover" data-bs-trigger="click"
+             title="Summer in Arknights (August 12, 2021)" 
+             data-bs-content="A summer themed work of the character 'Chen' and 'Hoshiguma' from Arknights.">
+      </div>
+    </div>  
+      
+    <!-- Artwork 23 -->
+    <div class="col-lg-3">
+      <div>
+        <img src="images/20210605_ak_amiya.jpg" class="artwork" 
+             data-bs-toggle="popover" data-bs-trigger="click"
+             title="Amiya the Seedsower (June 5, 2021)" 
+             data-bs-content="A work of the main character 'Amiya' from Arknights, featuring her limited skin, 'The Seedsower'.">
+      </div>
+    </div>
+      
+    <!-- Artwork 24 -->
+    <div class="col-lg-6">
+      <div>
+        <img src="images/ak-vemail.jpg" class="artwork3" 
+             data-bs-toggle="popover" data-bs-trigger="click"
+             title="Vermail (January 22, 2021)" 
+             data-bs-content="A work of the character 'Vermail' from Arknights.">
+      </div>
+    </div>
+      
+    <!-- Artwork 25 -->
+    <div class="col-lg-6">
+      <div>
+        <img src="images/wisteria_demo.jpg" class="artwork3" 
+             data-bs-toggle="popover" data-bs-trigger="click"
+             title="Wisteria Concept Art (November 8, 2021)" 
+             data-bs-content="Character art of my original character 'Wisteria'. It was for my personal training purpose. Using the red arrows to guide viewers.">
+      </div>
+    </div>
+      
+  </div>
+  </div>
+      
+    <!-- My Chibi Commission -->
+    <div class="tab-pane fade" id="chibi-commission" role="tabpanel" aria-labelledby="chibi-commission-tab">
+      <div class="row g-4 d-flex align-items-center">
+        <!-- Add your graphic design thumbnails or content here -->
+        <div class="col-lg-3">
+          <div>
+            <img src="images/Yae%20Miko.png" class="TTD" alt="Chibi Commission Sample" data-bs-toggle="popover" data-bs-trigger="click"
+             title="Yae Miko (May 16, 2024)" 
+             data-bs-content="A commercial use commission for a client for marketing materials. It is a character named, 'Yae Miko' from Genshin Impact.">
+          </div>
+        </div>
+          <div class="col-lg-3">
+          <div>
+            <img src="images/Yukong.png" class="TTD" alt="Chibi Commission Sample" data-bs-toggle="popover" data-bs-trigger="click"
+             title="Yukong (May 16, 2024)" 
+             data-bs-content="A commercial use commission for a client for marketing materials. It is a character named, 'Yukong' from Honkai Star Rail.">
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div>
+            <img src="images/tingyun.png" class="TTD" alt="Chibi Commission Sample" data-bs-toggle="popover" data-bs-trigger="click"
+             title="Tingyun (May 16, 2024)" 
+             data-bs-content="A commercial use commission for a client for marketing materials. It is a character named, 'Tingyun' from Honkai Star Rail.">
+          </div>
+        </div>
+          <div class="col-lg-3">
+          <div>
+            <img src="images/Tamamo%20aria.png" class="TTD" alt="Chibi Commission Sample" data-bs-toggle="popover" data-bs-trigger="click"
+             title="Tamamo Aria (May 16, 2024)" 
+             data-bs-content="A commercial use commission for a client for marketing materials. It is a character named, 'Tamamo Aria' from FGO.">
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div>
+            <img src="images/Tamamo%20no%20mae.png" class="TTD" alt="Chibi Commission Sample" data-bs-toggle="popover" data-bs-trigger="click"
+             title="Tamamo no Mae (May 16, 2024)" 
+             data-bs-content="A commercial use commission for a client for marketing materials. It is a character named, 'Tamamo no Mae' from FGO.">
+          </div>
+        </div>
+          <div class="col-lg-3">
+          <div>
+            <img src="images/Fgo%20Himiko.png" class="TTD" alt="Chibi Commission Sample" data-bs-toggle="popover" data-bs-trigger="click"
+             title="Himiko (May 16, 2024)" 
+             data-bs-content="A commercial use commission for a client for marketing materials. It is a character named, 'Himiko' from FGO.">
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div>
+            <img src="images/commission-chibi1.jpg" class="TTD" alt="Chibi Commission Sample" data-bs-toggle="popover" data-bs-trigger="click"
+             title="Commission (August 29, 2022)" 
+             data-bs-content="Commission work for a client.">
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div>
+            <img src="images/Chibi-art.jpg" class="TTD" alt="Chibi Commission Sample" data-bs-toggle="popover" data-bs-trigger="click"
+             title="Me (December 19, 2023)" 
+             data-bs-content="Uni project chibi art.">
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div>
+            <img src="images/chibi-kouyuu1.jpg" class="TTD" alt="Chibi Commission Sample" data-bs-toggle="popover" data-bs-trigger="click"
+             title="Kouyuu Nichijou 1 (October 16, 2022)" 
+             data-bs-content="Some daily life of Kouyuu.">
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div>
+            <img src="images/chibi-kouyuu2.jpg" class="TTD" alt="Chibi Commission Sample" data-bs-toggle="popover" data-bs-trigger="click"
+             title="Kouyuu Nichijou 2 (October 20, 2022)" 
+             data-bs-content="Some daily life of Kouyuu.">
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div>
+            <img src="images/commission-chibi2.jpg" class="TTD" alt="Chibi Commission Sample" data-bs-toggle="popover" data-bs-trigger="click"
+             title="Commission (June 2, 2024)" 
+             data-bs-content="Commission work for client.">
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div>
+            <img src="images/commission%204.png" class="sunny" alt="Chibi Commission Sample" data-bs-toggle="popover" data-bs-trigger="click"
+             title="Commission (March 25, 2023)" 
+             data-bs-content="Commission work for client.">
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div>
+            <img src="images/HI3-chibi-1.jpg" class="TTD" alt="Chibi Commission Sample" data-bs-toggle="popover" data-bs-trigger="click"
+             title="Angry Seele (July 14, 2021)" 
+             data-bs-content="Emotes I created for the Honkai Face-Off! Chibi Emote Contest in 2021.">
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div>
+            <img src="images/HI3-chibi-3.png" class="HI" alt="Chibi Commission Sample" data-bs-toggle="popover" data-bs-trigger="click"
+             title="Olenyeva Twins - Rozaliya (July 16, 2021)" 
+             data-bs-content="Emotes I created for the Honkai Face-Off! Chibi Emote Contest in 2021.">
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div>
+            <img src="images/HI3-chibi-2.png" class="HI" alt="Chibi Commission Sample" data-bs-toggle="popover" data-bs-trigger="click"
+             title="Olenyeva Twins - Liliya (July 16, 2021)" 
+             data-bs-content="Emotes I created for the Honkai Face-Off! Chibi Emote Contest in 2021.">
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div>
+            <img src="images/HI3-chibi-4.png" class="TTD" alt="Chibi Commission Sample" data-bs-toggle="popover" data-bs-trigger="click"
+             title="Hungry Kiana (July 21, 2021)" 
+             data-bs-content="Emotes I created for the Honkai Face-Off! Chibi Emote Contest in 2021.">
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div>
+            <img src="images/HI3-chibi-5.png" class="HI3" alt="Chibi Commission Sample" data-bs-toggle="popover" data-bs-trigger="click"
+             title="HoS on her day off (July 19, 2021)" 
+             data-bs-content="Emotes I created for the Honkai Face-Off! Chibi Emote Contest in 2021.">
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div>
+            <img src="images/klee-chibi-1.jpg" class="TTD" alt="Chibi Commission Sample" data-bs-toggle="popover" data-bs-trigger="click"
+             title="Sorry... (June 10, 2021)" 
+             data-bs-content="Stickers I created for the 'Fleeing Sunlight' Klee Sticker Contest in 2021.">
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div>
+            <img src="images/klee-chibi-2.jpg" class="TTD" alt="Chibi Commission Sample" data-bs-toggle="popover" data-bs-trigger="click"
+             title="Oh Come on! (June 10, 2021)" 
+             data-bs-content="Stickers I created for the 'Fleeing Sunlight' Klee Sticker Contest in 2021.">
+          </div>
+        </div>
+    </div>
+    </div>
+      
+      <!-- My UI Design -->
+    <div class="tab-pane fade" id="ui-design" role="tabpanel" aria-labelledby="ui-design-tab">
+      <div class="row g-4">
+        <!-- Add your UI design thumbnails or content here -->
+          <div class="col-lg-6">
+          <div>
+            <img src="images/MelodyStars1.png" class="MelodyStars" alt="UI Design Sample" data-bs-toggle="popover" data-bs-trigger="click"
+             title="Melody Stars Web Design (September 27, 2024)" 
+             data-bs-content="Project web design I made with html, css, javascript and bootstrap.">
+          </div>
+        </div>
+          <div class="col-lg-6">
+          <div>
+            <img src="images/MelodyStars2.png" class="MelodyStars" alt="UI Design Sample">
+          </div>
+        </div>
+          <div class="col-lg-6">
+          <div>
+            <img src="images/MelodyStars3.png" class="MelodyStars" alt="UI Design Sample">
+          </div>
+        </div>
+          <div class="col-lg-6">
+          <div>
+            <img src="images/MelodyStars4.png" class="MelodyStars" alt="UI Design Sample">
+          </div>
+        </div>
+          <div class="col-lg-6">
+          <div>
+            <img src="images/M-ultural.jpg" class="UIdesign" alt="UI Design Sample" data-bs-toggle="popover" data-bs-trigger="click"
+             title="M-ultural App Design (May, 2024)" 
+             data-bs-content="Project app design I made in Figma.">
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div>
+            <img src="images/UIdesign2.jpg" class="UIdesign" alt="UI Design Sample" data-bs-toggle="popover" data-bs-trigger="click"
+             title="K-Culture Wireframe Design (September, 2023)" 
+             data-bs-content="Project wireframe design.">
+          </div>
+        </div>
+        <div class="col-lg-12">
+          <div>
+            <img src="images/UIdesign.png" class="UIdesigns" alt="UI Design Sample" data-bs-toggle="popover" data-bs-trigger="click"
+             title="K-Culture Web Design (September, 2023)" 
+             data-bs-content="Project web design I made with html and css.">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Other Design -->
+    <div class="tab-pane fade" id="other-design" role="tabpanel" aria-labelledby="other-design-tab">
+      <div class="row g-4 d-flex align-items-center">
+        <!-- Add your graphic design thumbnails or content here -->
+        <div class="col-lg-6">
+          <div>
+            <img src="images/ttd%20eye.jpg" class="TTD" alt="Other Design Sample" data-bs-toggle="popover" data-bs-trigger="click"
+             title="TTD Lens Commercial Post (May 10, 2023)" 
+             data-bs-content="Designs I made to promote contact lenses from TTD eye.">
+          </div>
+        </div>
+          <div class="col-lg-6">
+          <div>
+            <img src="images/TTDEYE%202.jpg" class="TTD" alt="Other Design Sample">
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div>
+            <img src="images/graphic-design1.jpg" class="artwork" alt="Other Design Sample" data-bs-toggle="popover" data-bs-trigger="click"
+             title="Poster Design (September, 2023)" 
+             data-bs-content="Poster I designed to promote K-pop Culture.">
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div>
+            <img src="images/Logo.png" class="logo" alt="Other Design Sample" data-bs-toggle="popover" data-bs-trigger="click"
+             title="Logo Design (September, 2023)" 
+             data-bs-content="Logo design for K-Culture web.">
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div>
+            <img src="images/MelodyStars%20logo.png" class="logo" alt="Other Design Sample" data-bs-toggle="popover" data-bs-trigger="click"
+             title="Logo Design (November, 2024)" 
+             data-bs-content="Logo design for Melody Stars web.">
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div>
+            <img src="images/logo-design.jpg" class="logo" alt="Other Design Sample" data-bs-toggle="popover" data-bs-trigger="click"
+             title="Logo Design (March 22, 2023)" 
+             data-bs-content="Logo design for a client.">
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div>
+            <img src="images/Basic-Typography.jpg" class="logo" alt="Other Design Sample" data-bs-toggle="popover" data-bs-trigger="click"
+             title="Typography (September, 2023)" 
+             data-bs-content="Uni project typography.">
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div>
+            <img src="images/Basic-Typography2.jpg" class="logo" alt="Other Design Sample" data-bs-toggle="popover" data-bs-trigger="click"
+             title="Typography Design (September, 2023)" 
+             data-bs-content="Uni project typography.">
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div>
+            <img src="images/final%20asm%20p2.P0.5.jpg" class="TTD" alt="Other Design Sample" data-bs-toggle="popover" data-bs-trigger="click"
+             title="3D Modelling (December 27, 2024)" 
+             data-bs-content="Uni project kitchen modelling.">
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div>
+            <img src="images/traditional-art.jpg" class="logo" alt="Other Design Sample" data-bs-toggle="popover" data-bs-trigger="click"
+             title="Traditional Art (July, 2023)" 
+             data-bs-content="Drawn by pen on A3 paper.">
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+</section>
+    
+  <footer>
+    <p>&copy; 2024 [Your Name]. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+    <script>
+  // Enable all popovers
+  document.addEventListener('DOMContentLoaded', function () {
+    var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'));
+    var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+      return new bootstrap.Popover(popoverTriggerEl);
+    });
+  });
+</script>
+
+</body>
+</html>
