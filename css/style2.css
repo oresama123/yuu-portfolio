@@ -257,3 +257,104 @@ footer a:hover {
         transform: translateY(0);
     }
 }
+
+/* Small Mobile Devices - 576px or less */
+@media (max-width: 576px) {
+    /* General Styles */
+    body {
+        font-size: 13px; /* Slightly smaller font size */
+    }
+
+    /* Hero Section */
+    #hero {
+        height: 300px; /* Reduce hero section height */
+        padding: 10px; /* Less padding for small screens */
+    }
+
+    #hero h1 {
+        font-size: 1.6rem; /* Smaller title font size */
+    }
+
+    #hero p {
+        font-size: 0.9em; /* Adjust text size for better readability */
+    }
+
+    /* Back Navigator */
+    .back-navigator {
+        padding-top: 10px;
+        position: absolute;
+        top: 1em;
+        left: 1em;
+        font-size: 1rem; /* Adjust font size */
+    }
+
+    /* Section Titles */
+    h2 {
+        font-size: 1.3rem; /* Smaller section titles */
+    }
+
+    /* Gallery Section */
+    #gallery {
+        padding: 20px 10px; /* Less padding for small screens */
+    }
+
+    .gallery-grid {
+        display: block; /* Stack gallery items vertically */
+        padding: 0;
+    }
+
+    .gallery-item {
+        display: block; /* Ensure each gallery item is displayed block-level */
+        margin-bottom: 20px; /* Add space between gallery items */
+        text-align: center; /* Center the text */
+    }
+
+    .gallery-image {
+        width: 80%;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+        margin-left: 45px;
+    }
+    
+    .gallery-image:hover {
+    transform: scale(1.0);
+    }
+
+    .gallery-text {
+        text-align: center; /* Center the text */
+        margin-top: 10px; /* Space between image and text */
+    }
+
+    .gallery-text h3 {
+        font-size: 1.2rem; /* Smaller heading font */
+    }
+
+    .gallery-text p {
+        font-size: 0.9rem; /* Smaller paragraph text */
+    }
+
+    /* About Section */
+    #about {
+        padding: 20px 10px; /* Adjust padding */
+    }
+
+    #about img {
+        width: 90%; /* Make the image almost full width */
+        height: auto; /* Maintain aspect ratio */
+        border-radius: 10%; /* Rounded corners for the image */
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    }
+
+    .about-text p {
+        font-size: 0.9rem; /* Adjust font size */
+    }
+
+    /* Footer */
+    footer {
+        padding: 10px;
+        font-size: 0.75rem; /* Smaller footer text */
+    }
+
+    footer a {
+        font-size: 0.9rem; /* Adjust link font size */
+    }
+}
